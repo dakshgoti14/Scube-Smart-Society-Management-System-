@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpcomingMeetings">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dashBoard"
+            android:text="Upcoming Meetings"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:textSize="25sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:fontFamily="@font/arima_madurai_black"
+            tools:ignore="HardcodedText" />
+
+        <View
+            android:layout_width="70dp"
+            android:layout_height="3dp"
+            android:layout_toEndOf="@id/dashBoard"
+            android:background="@drawable/viewline"
+            android:id="@+id/view"
+            android:layout_marginTop="23dp"
+            android:layout_marginStart="10dp"/>
+
+        <ImageView
+            android:id="@+id/corner_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="-3dp"
+            android:layout_marginEnd="-1dp"
+            android:src="@drawable/corner_img"
+            tools:ignore="ContentDescription" />
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/meeting_add"
+        android:src="@drawable/event_plus"
+        android:background="@color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="7dp"
+        android:layout_marginEnd="7dp"
+        tools:ignore="ContentDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Scube</string>
+    <string name="scube">Scube</string>
+
+    <string name="rb2">I am the tenant</string>
+    <string name="rb1">I am the owner</string>
+
+    <string name="housemaidtxt">Get People Arranged For Domestic Help</string>
+    <string name="notifytxt">Get Notified about Society Meetings</string>
+    <string name="tracktxt">Keeps Track Of Maintenance Payment</string>
+    <string name="start">GET STARTED</string>
+
+    <string name="home">Home</string>
+    <string name="services">Services</string>
+    <string name="contact">Contacts</string>
+    <string name="feedback">Feedback</string>
+    <string name="my_account">Account</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="upevent">Upcoming Events</string>
+    <string name="meetings">Upcoming Meetings</string>
+    <string name="notice">Bulletin Board</string>
+    <string name="quote">Daily Golden Quotes</string>
+
+    <string name="acc_create1">Don\'t have an Account?</string>
+    <string name="acc_create2">Sign Up</string>
+
+</resources>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/NewTheme"
+    tools:context=".PhoneVerifyActivity">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:id="@+id/rellay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="270dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="-3dp"
+            android:layout_marginEnd="-3dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitEnd"
+            android:src="@mipmap/logo_corner"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/otp_text"
+            android:layout_below="@id/imageView"
+            android:text="Verify Phone No."
+            android:fontFamily="@font/arima_madurai_black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:textColor="@color/colorPrimaryDark"
+            tools:ignore="HardcodedText" />
+
+        <View
+            android:layout_width="90dp"
+            android:layout_height="3dp"
+            android:layout_toEndOf="@id/otp_text"
+            android:layout_below="@id/imageView"
+            android:background="@drawable/viewline"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="10dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/otp"
+            android:layout_below="@id/otp_text"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorPrimaryDark"
+            app:hintTextColor="@color/colorPrimaryDark"
+            app:errorEnabled="true"
+            app:boxStrokeColor="@color/colorPrimaryDark"
+            android:hint="Enter OTP"
+            app:boxStrokeWidth="2dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            app:boxCornerRadiusTopStart="20dp"
+            app:boxCornerRadiusBottomEnd="20dp"
+            app:startIconDrawable="@drawable/verify"
+            app:startIconTint="@color/colorPrimaryDark"
+            app:counterTextColor="@color/blackLogin"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            tools:ignore="HardcodedText">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:inputType="text"
+                android:textColor="@color/colorPrimaryDark" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/otp_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/otp"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="65dp"
+            android:fontFamily="@font/merriweather"
+            android:text="Verify Otp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/orange"
+            tools:ignore="HardcodedText"
+            app:cornerRadius="20dp"/>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/otp_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:indeterminateTint="@color/colorPrimaryDark"/>
+
+    </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

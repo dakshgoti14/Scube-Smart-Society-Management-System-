@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginBottom="57dp"
+    android:layout_width="match_parent"
+    android:theme="@style/NewTheme"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".RegisterActivity">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:id="@+id/main_img"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@mipmap/user_profile"
+            android:scaleType="fitStart"
+            android:layout_marginEnd="-5dp"
+            android:layout_marginTop="-5dp"
+            tools:ignore="ContentDescription" />
+
+            <RelativeLayout
+                android:id="@+id/relLayout"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                tools:ignore="UselessParent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dashBoard"
+                    android:text="User Profile"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="10dp"
+                    android:textSize="25sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/arima_madurai_black"
+                    tools:ignore="HardcodedText" />
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="90dp"
+                    android:layout_height="3dp"
+                    android:layout_toEndOf="@id/dashBoard"
+                    android:background="@drawable/viewline"
+                    android:backgroundTint="@color/white"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginStart="10dp"/>
+
+            </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linearlayout"
+            app:layout_constraintTop_toBottomOf="@id/main_img"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/name_title"
+                android:text="FullName: -"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/poppins"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                tools:ignore="HardcodedText" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fname"
+                android:text="User's Full name"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/pinkish_red"
+                android:textSize="18sp"
+                android:layout_marginTop="-5dp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/uname_title"
+                android:text="Username: -"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/poppins"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                tools:ignore="HardcodedText" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/uname"
+                android:text="User's nick name"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/pinkish_red"
+                android:textSize="18sp"
+                android:layout_marginTop="-5dp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/email_title"
+                android:text="Email: -"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/poppins"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                tools:ignore="HardcodedText" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/email"
+                android:text="User's Email"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/pinkish_red"
+                android:textSize="18sp"
+                android:layout_marginTop="-5dp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/phone_title"
+                android:text="Phone No. : -"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/poppins"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                tools:ignore="HardcodedText" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/phoneNo"
+                android:text="User's Phone number"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/pinkish_red"
+                android:textSize="18sp"
+                android:layout_marginTop="-5dp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/block_title"
+                android:text="Block No. : -"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/poppins"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                tools:ignore="HardcodedText" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/block"
+                android:text="User's Block No."
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/pinkish_red"
+                android:textSize="18sp"
+                android:layout_marginTop="-5dp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/flat_title"
+                android:text="Flat No. : -"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/poppins"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                tools:ignore="HardcodedText" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/flat"
+                android:text="User's Flat No."
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/pinkish_red"
+                android:textSize="18sp"
+                android:layout_marginTop="-5dp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/members_title"
+                android:text="Total Members: -"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/poppins"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                tools:ignore="HardcodedText" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/members"
+                android:text="User's Family Members"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/pinkish_red"
+                android:textSize="18sp"
+                android:layout_marginTop="-5dp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ot_title"
+                android:text="Owner or Tenant: -"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/poppins"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                tools:ignore="HardcodedText" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ot_desc"
+                android:text="User's House Ownership"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/pinkish_red"
+                android:textSize="18sp"
+                android:layout_marginTop="-5dp"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/personal_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="60dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:drawableLeft="@drawable/username"
+                android:drawableTint="@color/white"
+                android:fontFamily="@font/merriweather"
+                android:padding="10dp"
+                android:text="Edit Personal Data"
+                android:textAlignment="gravity"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:cornerRadius="15dp"
+                app:elevation="10dp"
+                app:strokeColor="@color/colorPrimary"
+                app:strokeWidth="2dp"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/society_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="60dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:drawableLeft="@drawable/block_no"
+                android:drawableTint="@color/white"
+                android:fontFamily="@font/merriweather"
+                android:padding="10dp"
+                android:text="Edit Society Data"
+                android:textAlignment="gravity"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:cornerRadius="15dp"
+                app:elevation="10dp"
+                app:strokeColor="@color/colorPrimary"
+                app:strokeWidth="2dp"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/update_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="80dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:drawableLeft="@drawable/update"
+                android:drawableTint="@color/white"
+                android:fontFamily="@font/merriweather"
+                android:padding="10dp"
+                android:text="Update Details"
+                android:textAlignment="gravity"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:cornerRadius="15dp"
+                app:elevation="10dp"
+                app:strokeColor="@color/colorPrimary"
+                app:strokeWidth="2dp"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/logout_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="110dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="110dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:drawableRight="@drawable/logout"
+                android:drawableTint="@color/white"
+                android:fontFamily="@font/merriweather"
+                android:padding="10dp"
+                android:text="Log Out"
+                android:textAlignment="gravity"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:cornerRadius="15dp"
+                app:elevation="10dp"
+                app:strokeColor="@color/colorPrimary"
+                app:strokeWidth="2dp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>

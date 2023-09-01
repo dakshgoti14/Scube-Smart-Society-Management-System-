@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:theme="@style/NewTheme"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".LoginActivity">
+
+        <RelativeLayout
+            android:id="@+id/rellay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="-3dp"
+                android:layout_marginEnd="-3dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="fitEnd"
+                android:src="@mipmap/logo_corner"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/logintxt"
+                android:layout_below="@id/imageView"
+                android:text="Login"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/arima_madurai_black"
+                android:layout_marginTop="-16dp"
+                android:layout_marginStart="25dp"
+                android:textColor="@color/colorPrimaryDark"
+                tools:ignore="HardcodedText" />
+
+            <View
+                android:layout_width="90dp"
+                android:layout_height="3dp"
+                android:layout_toEndOf="@id/logintxt"
+                android:layout_below="@id/imageView"
+                android:background="@drawable/viewline"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"/>
+
+            <LinearLayout
+                android:id="@+id/linlay"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="250dp"
+                android:padding="5dp"
+                android:layout_marginBottom="20dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    app:hintTextColor="@color/colorPrimaryDark"
+                    app:errorEnabled="true"
+                    app:boxStrokeColor="@color/colorPrimaryDark"
+                    android:hint="Username"
+                    app:boxStrokeWidth="2dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    app:boxCornerRadiusTopStart="20dp"
+                    app:boxCornerRadiusBottomEnd="20dp"
+                    app:counterEnabled="true"
+                    app:startIconDrawable="@drawable/username"
+                    app:startIconTint="@color/colorPrimaryDark"
+                    app:counterMaxLength="15"
+                    app:counterTextColor="@color/blackLogin"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    tools:ignore="HardcodedText">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:inputType="text"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    app:hintTextColor="@color/colorPrimaryDark"
+                    app:errorEnabled="true"
+                    app:boxStrokeColor="@color/colorPrimaryDark"
+                    android:hint="Password"
+                    app:boxStrokeWidth="2dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    app:boxCornerRadiusTopStart="20dp"
+                    app:boxCornerRadiusBottomEnd="20dp"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/colorPrimaryDark"
+                    app:startIconDrawable="@drawable/loginpwd"
+                    app:startIconTint="@color/colorPrimaryDark"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    tools:ignore="HardcodedText">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:inputType="textPassword"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/forgotpwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="-5dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/arial_bold"
+                    android:text="Forgot Password?"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    tools:ignore="HardcodedText" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="50dp"
+                    android:fontFamily="@font/merriweather"
+                    android:text="Login"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    app:backgroundTint="@color/orange"
+                    app:cornerRadius="14dp"
+                    app:elevation="15dp"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="160dp"
+                android:layout_height="4dp"
+                android:layout_below="@id/linlay"
+                android:background="@drawable/viewline"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="7dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linlay"
+                android:layout_marginTop="-10dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="OR"
+                android:textColor="#111d5e"
+                android:layout_centerHorizontal="true"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="160dp"
+                android:layout_height="4dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/linlay"
+                android:background="@drawable/viewline"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="7dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/linlay2"
+                android:layout_below="@id/view3"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/acc_text"
+                    android:text="Don't have an Account? "
+                    tools:ignore="HardcodedText"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/signin"
+                    android:text="Sign In"
+                    tools:ignore="HardcodedText"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

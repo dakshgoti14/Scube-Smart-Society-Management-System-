@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:theme="@style/NewTheme"
+    android:layout_height="match_parent">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".RegisterActivity">
+
+    <RelativeLayout
+        android:id="@+id/rellay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="270dp"
+            android:layout_height="200dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitEnd"
+            android:layout_marginTop="-3dp"
+            android:layout_marginEnd="-3dp"
+            android:src="@mipmap/logo_corner"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/signintxt"
+            android:layout_below="@id/imageView"
+            android:fontFamily="@font/arima_madurai_black"
+            android:text="Sign In"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="-10dp"
+            android:layout_marginStart="25dp"
+            android:textColor="@color/colorPrimaryDark"
+            tools:ignore="HardcodedText" />
+
+        <View
+            android:layout_width="90dp"
+            android:layout_height="3dp"
+            android:layout_toEndOf="@id/signintxt"
+            android:layout_below="@id/imageView"
+            android:background="@drawable/viewline"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linlay"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/signintxt">
+
+            <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fullname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorPrimaryDark"
+            app:hintTextColor="@color/colorPrimaryDark"
+            app:errorEnabled="true"
+            app:boxStrokeColor="@color/colorPrimaryDark"
+            android:hint="FullName"
+            app:boxStrokeWidth="2dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            app:boxCornerRadiusTopStart="20dp"
+            app:boxCornerRadiusBottomEnd="20dp"
+            app:startIconDrawable="@drawable/fullname"
+            app:startIconTint="@color/colorPrimaryDark"
+            app:counterTextColor="@color/blackLogin"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            tools:ignore="HardcodedText">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:inputType="text"
+                android:textColor="@color/colorPrimaryDark" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorPrimaryDark"
+                app:hintTextColor="@color/colorPrimaryDark"
+                app:errorEnabled="true"
+                app:boxStrokeColor="@color/colorPrimaryDark"
+                android:hint="Username"
+                app:boxStrokeWidth="2dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                app:boxCornerRadiusTopStart="20dp"
+                app:boxCornerRadiusBottomEnd="20dp"
+                app:counterEnabled="true"
+                app:startIconDrawable="@drawable/username"
+                app:startIconTint="@color/colorPrimaryDark"
+                app:counterMaxLength="15"
+                app:counterTextColor="@color/blackLogin"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:inputType="text"
+                    android:textColor="@color/colorPrimaryDark" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorPrimaryDark"
+                app:hintTextColor="@color/colorPrimaryDark"
+                app:errorEnabled="true"
+                app:boxStrokeColor="@color/colorPrimaryDark"
+                android:hint="Email Id"
+                app:boxStrokeWidth="2dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                app:boxCornerRadiusTopStart="20dp"
+                app:boxCornerRadiusBottomEnd="20dp"
+                app:startIconDrawable="@drawable/email"
+                app:startIconTint="@color/colorPrimaryDark"
+                app:counterTextColor="@color/blackLogin"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                tools:ignore="HardcodedText">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/colorPrimaryDark" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorPrimaryDark"
+                app:hintTextColor="@color/colorPrimaryDark"
+                app:errorEnabled="true"
+                app:boxStrokeColor="@color/colorPrimaryDark"
+                android:hint="Password"
+                app:boxStrokeWidth="2dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                app:boxCornerRadiusTopStart="20dp"
+                app:boxCornerRadiusBottomEnd="20dp"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/colorPrimaryDark"
+                app:startIconDrawable="@drawable/loginpwd"
+                app:startIconTint="@color/colorPrimaryDark"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                tools:ignore="HardcodedText">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+
+                    android:inputType="textPassword"
+                    android:textColor="@color/colorPrimaryDark" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/phoneNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorPrimaryDark"
+                app:hintTextColor="@color/colorPrimaryDark"
+                app:errorEnabled="true"
+                app:boxStrokeColor="@color/colorPrimaryDark"
+                android:hint="Phone No"
+                app:boxStrokeWidth="2dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                app:boxCornerRadiusTopStart="20dp"
+                app:boxCornerRadiusBottomEnd="20dp"
+                app:startIconDrawable="@drawable/phone"
+                app:startIconTint="@color/colorPrimaryDark"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                tools:ignore="HardcodedText">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:inputType="phone"
+                    android:textColor="@color/colorPrimaryDark" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/blockNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorPrimaryDark"
+                app:hintTextColor="@color/colorPrimaryDark"
+                app:errorEnabled="true"
+                app:boxStrokeColor="@color/colorPrimaryDark"
+                android:hint="Enter Block No"
+                app:boxStrokeWidth="2dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                app:boxCornerRadiusTopStart="20dp"
+                app:boxCornerRadiusBottomEnd="20dp"
+                app:startIconDrawable="@drawable/block_no"
+                app:startIconTint="@color/colorPrimaryDark"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                tools:ignore="HardcodedText">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:inputType="text"
+                    android:textColor="@color/colorPrimaryDark" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/flatNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorPrimaryDark"
+                app:hintTextColor="@color/colorPrimaryDark"
+                app:errorEnabled="true"
+                app:boxStrokeColor="@color/colorPrimaryDark"
+                android:hint="Enter Flat No"
+                app:boxStrokeWidth="2dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                app:boxCornerRadiusTopStart="20dp"
+                app:boxCornerRadiusBottomEnd="20dp"
+                app:startIconDrawable="@drawable/flat_no"
+                app:startIconTint="@color/colorPrimaryDark"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                tools:ignore="HardcodedText">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:inputType="text"
+                    android:textColor="@color/colorPrimaryDark" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/familyMember"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorPrimaryDark"
+                app:hintTextColor="@color/colorPrimaryDark"
+                app:errorEnabled="true"
+                app:boxStrokeColor="@color/colorPrimaryDark"
+                android:hint="Total Members"
+                app:boxStrokeWidth="2dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                app:boxCornerRadiusTopStart="20dp"
+                app:boxCornerRadiusBottomEnd="20dp"
+                app:startIconDrawable="@drawable/family"
+                app:helperTextEnabled="true"
+                app:helperText="Enter total number of family members"
+                app:helperTextTextColor="@color/colorPrimaryDark"
+                app:startIconTint="@color/colorPrimaryDark"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                tools:ignore="HardcodedText">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:inputType="number"
+                    android:textColor="@color/colorPrimaryDark" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <RadioGroup
+                android:id="@+id/rbg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="6dp">
+
+                <RadioButton
+                    android:id="@+id/rb1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_weight="0.6"
+                    android:fontFamily="@font/poppins"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:checked="true"
+                    android:text="@string/rb1"
+                    android:textSize="15sp"/>
+
+                <RadioButton
+                    android:id="@+id/rb2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_weight="1.4"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:text="@string/rb2" />
+
+            </RadioGroup>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/signInCall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign In"
+                android:layout_gravity="center"
+                android:layout_marginStart="80dp"
+                android:layout_marginEnd="80dp"
+                app:cornerRadius="14dp"
+                android:fontFamily="@font/merriweather"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                app:backgroundTint="@color/orange"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

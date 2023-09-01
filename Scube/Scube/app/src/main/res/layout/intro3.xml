@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/NewTheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relativeLayout"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitEnd"
+            android:layout_marginTop="-5dp"
+            android:layout_marginEnd="-3dp"
+            android:src="@mipmap/logo_corner"
+            tools:ignore="ContentDescription" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/housemaid"
+            android:layout_width="250dp"
+            android:layout_height="230dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/home"
+            app:lottie_rawRes="@raw/notify"
+            app:lottie_autoPlay="true"
+            android:layout_marginStart="100dp"
+            android:scaleType="centerCrop"
+            app:lottie_loop="true" />
+
+        <ImageView
+            android:id="@+id/ushape"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/housemaid"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="-3dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="-3dp"
+            android:layout_marginBottom="-3dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ushape2"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/housemaidtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/housemaid"
+            android:fontFamily="@font/merriweather"
+            android:text="@string/notifytxt"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="120dp"
+            android:textAlignment="center"/>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

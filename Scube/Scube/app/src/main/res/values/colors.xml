@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">#111d5e</color>
+    <color name="colorPrimaryDark">#000034</color>
+    <color name="colorAccent">#45448c</color>
+
+    <color name="appColor">#111d5e</color>
+
+    <color name="white">#fff</color>
+
+    <color name="blackLogin">#000000</color>
+
+    <color name="mtrl_textinput_default_box_stroke_color" tools:override="false" tools:ignore="PrivateResource">#000034</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="blue_dark">#101820</color>
+    <color name="orange">#F2AA4C</color>
+    <!--dots inactive colors-->
+    <color name="dot_dark_screen1">#000034</color>
+
+    <!--dots active colors-->
+    <color name="dot_light_screen1">#ffffff</color>
+    <color name="grey">#A6ACAF</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen1</item>
+
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen1</item>
+
+    </array>
+
+    <color name="grey_3">#f7f7f7</color>
+    <color name="grey_5">#f2f2f2</color>
+    <color name="grey_10">#e6e6e6</color>
+    <color name="grey_20">#cccccc</color>
+    <color name="grey_40">#999999</color>
+    <color name="grey_60">#666666</color>
+    <color name="grey_80">#37474F</color>
+    <color name="grey_90">#263238</color>
+
+    <color name="purple">#7B1FA2</color>
+    <color name="pinkish_red">#ff4040</color>
+
+</resources>

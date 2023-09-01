@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/navigation_home"
+        android:icon="@drawable/home"
+        android:title="@string/home"/>
+
+    <item android:title="@string/services"
+        android:icon="@drawable/broom"
+        android:id="@+id/navigation_services"/>
+
+    <item android:id="@+id/navigation_contact"
+        android:icon="@drawable/two_man"
+        android:title="@string/contact"/>
+
+    <item android:title="@string/feedback"
+        android:id="@+id/navigation_feedback"
+        android:icon="@drawable/feedback"
+        />
+
+    <item android:icon="@drawable/user"
+        android:id="@+id/navigation_my_account"
+        android:title="@string/my_account"/>
+</menu>
